@@ -45,6 +45,19 @@ do
     echo 'fi' >> /etc/vcontrold/2_mqtt.tmpl
 done
 
+if [ -f /config/vcontrold/vcontrold.xml ]; then
+    echo 'Using custom vcontrold.xml from config folder'
+    cp /config/vcontrold/vcontrold.xml /etc/vcontrold/vcontrold.xml
+else
+    echo 'Using default vcontrold.xml'
+fi
+if [ -f /config/vcontrold/vito.xml ]; then
+    echo 'Using custom vito.xml from config folder'
+    cp /config/vcontrold/vito.xml /etc/vcontrold/vito.xml
+else
+    echo 'Using default vito.xml'
+fi
+
 # Set device ID
 sed -i "s/#DEVICEID#/$config_deviceid/g" /etc/vcontrold/vcontrold.xml
 

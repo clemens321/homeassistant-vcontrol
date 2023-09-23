@@ -11,6 +11,8 @@ arch:
   - amd64
   - i386
 init: false
+map:
+  - config
 options:
   tty: "/dev/ttyUSB0"
   refresh: 30
