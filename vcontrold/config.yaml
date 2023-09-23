@@ -77,7 +77,7 @@ apparmor: false
 ports:
   3002/tcp: null
 ports_description:
-  3002/tcp: "Vcontrol deamon"
+  3002/tcp: "Vcontrol daemon"
 services:
   - mqtt:need
 devices:
