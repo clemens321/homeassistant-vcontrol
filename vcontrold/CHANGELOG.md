@@ -1,5 +1,10 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.8.5
+
+- Added feature to use custom vcontrold.xml and vito.xml (@clemens321)
+- Fix error messages if trying to remove non existing files (@clemens321)
+
 ## 1.8.4
 
 - Added polish translation (@Qbunjo)
