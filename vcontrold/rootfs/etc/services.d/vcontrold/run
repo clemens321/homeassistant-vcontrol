@@ -18,8 +18,8 @@ config_deviceid=$(bashio::config 'device_id')
 config_commands=$(bashio::config 'commands')
 
 # Cleanup scripts
-rm /etc/vcontrold/1_mqtt_commands.txt || /bin/true
-rm /etc/vcontrold/2_mqtt.tmpl || /bin/true
+rm -f /etc/vcontrold/1_mqtt_commands.txt || /bin/true
+rm -f /etc/vcontrold/2_mqtt.tmpl || /bin/true
 echo '#!/bin/sh' > /etc/vcontrold/2_mqtt.tmpl
 
 # Configure scripts
